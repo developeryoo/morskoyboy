@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style type="text/css">
+        .bg {
+            background-color: black;
+        }
+
+        h1 {
+            margin: 0;
+        }
+        h2 {
+            margin: 0;
+
+        }
+
+        /* Ошибка */
+        .warning {
+            background-color: red;
+        }
+
+
+        /* Цвет h2 */
+
+        .sheets4 {
+            color: yellowgreen;
+        }
+        .sheets3 {
+            color: blue;
+        }
+        .sheets2 {
+            color: orange;
+        }
+        .sheets1 {
+            color: violet;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <!-- это div-родитель -->
+    <div class="col-7 bg-light mx-auto">
+        <div>
+            <h1 class="task">Морской бой</h1>
+            <h2><span class="sheets4">Живо частей корабля(ей) с 4 клетками -</span> <span class="da">4</span></h2>
+            <h2><span class="sheets3">Живо частей корабля(ей) с 3 клетками -</span> <span class="re">3</span></h2>
+            <h2><span class="sheets2">Живо частей корабля(ей) с 2 клетками - </span><span class="mi">4</span></h2>
+            <h2><span class="sheets1">Живо кораблей с 1 клетками - </span><span class="fa">4</span></h2>
+            <h1>Score: <span class="score">0</span></h1>
+        </div>
+        <!-- Дивы с нумерацией 1, 2, 3 и т.д. -->
+        <div class="row">
+            <div class="col-1 px-5 py-3  bg-warning text-center border"> </div>
+            <div class="col-1 px-5 py-3  bg-warning text-center border">
+                <h4>1</h4> </div>
+            <div class="col-1 px-5 py-3  bg-warning text-center border">
+                <h4>2</h4> </div>
+            <div class="col-1 px-5 py-3  bg-warning text-center border">
+                <h4>3</h4> </div>
+            <div class="col-1 px-5 py-3  bg-warning text-center border">
+                <h4>4</h4> </div>
+            <div class="col-1 px-5  py-3 bg-warning text-center border">
+                <h4>5</h4> </div>
+            <div class="col-1 px-5 py-3  bg-warning text-center border">
+                <h4>6</h4> </div>
+            <div class="col-1 px-5 py-3  bg-warning text-center border">
+                <h4>7</h4> </div>
+            <div class="col-1 px-5 py-3  bg-warning text-center border">
+                <h4>8</h4> </div>
+        </div>
+        <!--Линия А-->
+        <div class="row">
+            <div class="col-1 px-5 py-4 bg-warning text-center border">
+                <h4>A</h4> </div>
+            <div class="col-1 promax  px-5 py-4 bg border"> </div>
+            <div class="col-1 korabl1  px-5 py-4 bg border"> </div>
+            <div class="col-1 promax  px-5 py-4 bg border"> </div>
+            <div class="col-1 promax  px-5 py-4 bg border"> </div>
+            <div class="col-1 promax  px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+        </div>
+        <!--Линия B-->
+        <div class="row">
+            <div class="col-1  px-5 py-4 bg-warning text-center border">
+                <h4>B</h4> </div>
+            <div class="col-1 promax  px-5 py-4 bg border"> </div>
+            <div class="col-1 promax  px-5 py-4 bg border"> </div>
+            <div class="col-1 promax  px-5 py-4 bg border"> </div>
+            <div class="col-1 korabl4  px-5 py-4 bg border"> </div>
+            <div class="col-1 korabl4 px-5 py-4 bg border"> </div>
+            <div class="col-1 korabl4  px-5 py-4 bg border"> </div>
+            <div class="col-1 korabl4 px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+        </div>
+        <!--Линия C-->
+        <div class="row">
+            <div class="col-1 px-5 py-4  bg-warning text-center border">
+                <h4>C</h4> </div>
+            <div class="col-1 promax  px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4  bg border"> </div>
+            <div class="col-1 promax px-5 py-4  bg border"> </div>
+            <div class="col-1 promax px-5 py-4  bg border"> </div>
+            <div class="col-1 promax  px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4  bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+        </div>
+        <!--Линия D-->
+        <div class="row">
+            <div class="col-1 px-5 py-4  bg-warning text-center border">
+                <h4>D</h4> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 korabl2 px-5 py-4 bg border "> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 korabl1 px-5 py-4 bg border"> </div>
+        </div>
+        <!--Линия E-->
+        <div class="row">
+            <div class="col-1 px-5 py-4  bg-warning text-center border">
+                <h4>E</h4> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 korabl2 px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 korabl3 px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+        </div>
+        <!--Линия F-->
+        <div class="row">
+            <div class="col-1 px-5 py-4 bg-warning text-center border">
+                <h4>F</h4> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 korabl3 px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 korabl2 px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+        </div>
+        <!--Линия G-->
+        <div class="row">
+            <div class="col-1 px-5 py-4 bg-warning text-center border">
+                <h4>G</h4> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 korabl3 px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 korabl2 px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+        </div>
+        <!--Линия H-->
+        <div class="row">
+            <div class="col-1 px-5 py-4 bg-warning text-center border">
+                <h4>H</h4> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 promax px-5 py-4 bg border"> </div>
+            <div class="col-1 korabl1 px-5 py-4 bg border"> </div>
+        </div>
+    </div>
+
+
+    <script>
+        let score = document.querySelector('.score')
+        let score1 = 0
+
+        let fa = document.querySelector('.fa')
+        let fa1 = 4
+
+        let da = document.querySelector('.da')
+        let da1 = 4
+
+        let re = document.querySelector('.re')
+        let re1 = 3
+
+        let mi = document.querySelector('.mi')
+        let mi1 = 4
+
+
+        let promax = document.querySelectorAll('.promax')
+        for(let i=0;i<50;i=i+1) {
+            promax[i].onclick = function() {
+                promax[i].style.backgroundColor = 'red';
+            }
+        }
+
+
+        let korabl4 = document.querySelectorAll('.korabl4')
+        for (let i=0;i<4;i=i+1) {
+            korabl4[i].onclick = function() {
+                korabl4[i].style.backgroundColor = 'yellowgreen';
+                score1 = score1+1
+                score.innerHTML = score1
+
+                da1 = da1-1
+                da.innerHTML = da1
+            }
+        }
+
+
+        let korabl3 = document.querySelectorAll('.korabl3')
+        for (let i=0;i<3;i=i+1) {
+            korabl3[i].onclick = function() {
+                korabl3[i].style.backgroundColor = 'blue';
+                score1 = score1+1
+                score.innerHTML = score1
+
+                re1 = re1-1
+                re.innerHTML = re1
+            }
+        }
+
+
+        let korabl2 = document.querySelectorAll('.korabl2')
+        for (let i=0;i<4;i=i+1) {
+            korabl2[i].onclick = function() {
+                korabl2[i].style.backgroundColor = 'orange';
+                score1 = score1+1
+                score.innerHTML = score1
+
+                mi1 = mi1-1
+                mi.innerHTML = mi1
+            }
+        }
+
+
+        let korabl1 = document.querySelectorAll('.korabl1')
+        for (let i=0;i<4;i=i+1) {
+            korabl1[i].onclick = function() {
+                korabl1[i].style.backgroundColor = 'violet';
+                score1 = score1+1
+                score.innerHTML = score1
+
+                fa1 = fa1-1
+                fa.innerHTML = fa1
+            }
+        }
+
+    </script>
+</body>
+
+</html>
